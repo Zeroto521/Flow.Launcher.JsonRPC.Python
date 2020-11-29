@@ -6,7 +6,7 @@ import demjson
 class FlowLauncherAPI:
 
     @classmethod
-    def change_query(cls, query, requery: bool = False):
+    def change_query(cls, query: str, requery: bool = False):
         """
         change flow launcher query
         """
@@ -15,7 +15,7 @@ class FlowLauncherAPI:
             "parameters": [query, requery]}))
 
     @classmethod
-    def shell_run(cls, cmd):
+    def shell_run(cls, cmd: str):
         """
         run shell commands
         """
